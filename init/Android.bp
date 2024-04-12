@@ -1,5 +1,6 @@
 //
 // Copyright (C) 2020 The LineageOS Project
+//           (C) 2024 Paranoid Android
 //
 // SPDX-License-Identifier: Apache-2.0
 //
@@ -8,9 +9,6 @@ cc_library_static {
     name: "libinit_marble",
     srcs: ["init_marble.cpp"],
     recovery_available: true,
-    whole_static_libs: ["libbase"],
-    include_dirs: [
-        "system/libbase/include",
-        "system/core/init"
-    ]
+    whole_static_libs: ["//device/xiaomi/sm8450-common:libinit_xiaomi_taro"],
+    include_dirs: ["system/core/init"],
 }
