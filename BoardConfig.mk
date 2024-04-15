@@ -20,3 +20,6 @@ TARGET_RECOVERY_DEVICE_MODULES := libinit_marble
 
 # Screen density
 TARGET_SCREEN_DENSITY := 420
+
+# Vibrator
+$(call soong_config_set, XIAOMI_VIBRATOR, USE_EFFECT_STREAM, true)
