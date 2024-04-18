@@ -986,6 +986,10 @@ vendor/lib64/camera/com.qti.tuned.marble_ofilm_imx355_ultra_i.bin
 vendor/lib64/camera/com.qti.tuned.marble_ofilm_ov64b40_wide_i.bin
 vendor/lib64/camera/com.qti.tuned.marble_sunny_s5k3p9sp04_front_i.bin
 
+# Charging
+vendor/bin/batterysecret
+vendor/etc/init/hw/init.batterysecret.rc
+
 # Display
 vendor/bin/hw/vendor.qti.hardware.display.composer-service
 vendor/lib64/libclient2slpi.notifier.so
@@ -1087,6 +1091,9 @@ vendor/firmware/a730_zap.elf
 vendor/firmware/a730_zap.mbn
 vendor/firmware/a730_zap.mdt
 vendor/firmware/gmu_gen70000.bin
+
+# Media (Dolby)
+vendor/etc/dolby_vision.cfg
 
 # Sensors config
 vendor/etc/sensors/config/lightSensorConfig.json
