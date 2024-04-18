@@ -45,6 +45,9 @@ PRODUCT_COPY_FILES += \
 # NFC
 TARGET_NFC_SKU := marble
 
+PRODUCT_SYSTEM_EXT_PROPERTIES += \
+    persist.nfc.camera.pause_polling=true
+
 # Namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
