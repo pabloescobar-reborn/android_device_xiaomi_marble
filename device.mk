@@ -23,6 +23,8 @@ PRODUCT_VENDOR_PROPERTIES += \
     vendor.display.idle_time=0
 
 # Fingerprint
+TARGET_USES_MFP_DAEMON := true
+
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1.vendor
 
